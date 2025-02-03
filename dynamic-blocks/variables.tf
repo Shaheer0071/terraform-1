@@ -1,4 +1,4 @@
-variables "instances"{
+variable "instances"{
     type = map
     default = {
         mysql = "t3.small"
