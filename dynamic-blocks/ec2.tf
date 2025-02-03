@@ -15,7 +15,7 @@ resource "aws_security_group" "allow_tls" {
 dynamic "ingress" {
 
  for_each = [22,8080,3306]
- iterator = "port"
+ iterator = port
  content {
    from_port       = port.value
     to_port         = port.value
